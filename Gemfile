@@ -77,7 +77,7 @@ end
 # end
 
 group :production do
-  gem 'pg', '~> 0.21' # for Heroku deployment
+  gem 'pg', '~> 1.5.5' # for Heroku deployment
 end
 
 
