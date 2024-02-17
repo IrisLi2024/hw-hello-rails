@@ -1,0 +1,29 @@
+# open browser 
+rails server
+
+# heroku authorizations:create
+00f8f1a8-0367-48ae-b2ea-ee7778d26
+
+# update to heroku
+git push heroku main
+
+# Use the command heroku logs to see the last several 
+# lines of error log messages from Heroku. What caused the error?
+
+heroku logs
+
+https://rottenpotatoes-csce-b142a00ab826.herokuapp.com/
+
+git remote set-url origin https://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@github.com/IrisLi2024/rottenpotatoes-rails.git
+
+rails console
+rails db:seed
+
+
+
+
+
+
+
+
+
