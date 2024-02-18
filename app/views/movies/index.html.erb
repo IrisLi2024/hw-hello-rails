@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Movies</h1>
-
+<!--
 <div id="movies">
   <% @movies.each do |movie| %>
     <%= render movie %>
@@ -10,5 +10,29 @@
     </p>
   <% end %>
 </div>
+-->
 
-<%= link_to "New movie", new_movie_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= link_to "#{movie.title}", movie %></td>
+        <td><%= movie.rating %></td>
+        <td><%= movie.release_date %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><%= link_to "New movie", new_movie_path %></td>
+    </tr>
+  </tfoot>
+</table>
+

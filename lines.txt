@@ -14,10 +14,12 @@ heroku logs
 
 https://rottenpotatoes-csce-b142a00ab826.herokuapp.com/
 
-git remote set-url origin https://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@github.com/IrisLi2024/rottenpotatoes-rails.git
 
 rails console
 rails db:seed
+
+# please remember
+git add .  && git commit -am "make it better" && git push heroku master
 
 
 
