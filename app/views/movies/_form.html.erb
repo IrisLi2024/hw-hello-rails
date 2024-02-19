@@ -11,25 +11,24 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%= form.label :rating, style: "display: block" %>
-    <%= form.text_field :rating %>
-  </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :release_date, style: "display: block" %>
-    <%= form.text_field :release_date %>
-  </div>
+  <table>
+  <tr>
+    <td><%= form.label :title %></td>
+    <td><%= form.text_field :title %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :rating %></td>
+    <td><%= form.text_field :rating %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :description %></td>
+    <td><%= form.text_field :description %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :release_date %></td>
+    <td><%= form.text_field :release_date %></td>
+  </tr>
+</table>
 
   <div>
     <%= form.submit %>

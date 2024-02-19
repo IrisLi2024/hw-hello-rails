@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+body {
+
+text-align: center;
+
+}
+
+.table-index {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  font-size: 20px;
+  min-width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+}
+
+.table-index thead tr {
+    background-color: #ccb3ff;
+}
+
+.table-index th,
+.table-index td {
+    padding: 12px 15px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Additional styles can be added here */
+

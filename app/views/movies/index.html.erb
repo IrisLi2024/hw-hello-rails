@@ -12,10 +12,10 @@
 </div>
 -->
 
-<table>
+<table class="table-index">
   <thead>
     <tr>
-      <th><%= sort_link(@q, :title, "Title", default_order: :asc) %></th>
+      <th><%= sort_link(@q, :title, "Title", default_order: :desc) %></th>
       <th><%= sort_link(@q, :rating, "Rating") %></th>
       <th><%= sort_link(@q, :release_date, "Release Date") %></th>
     </tr>
