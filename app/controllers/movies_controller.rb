@@ -3,11 +3,19 @@ class MoviesController < ApplicationController
 
   # GET /movies or /movies.json
   def index
-    @movies = Movie.all
+    # @movies = Movie.all
+    @q = Movie.ransack(params[:q])
+    @movies = @q.result(distinct: true)
   end
 
   # GET /movies/1 or /movies/1.json
   def show
+    @movie = Movie.find(params[:id])
+    session[:return_to] = request.referer
+  end
+  
+  def back_to_movies
+    redirect_to session.delete(:return_to) || movies_path
   end
 
   # GET /movies/new
