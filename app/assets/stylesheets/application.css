@@ -15,34 +15,81 @@
  */
 body {
 
-text-align: center;
+  text-align: center;
+  background-color: #e6e6ff
+}
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #f5f5f0;
+  text-align: left;
+  font-size: 20px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
 }
 
 .table-index {
-  margin-left: auto;
-  margin-right: auto;
   border-collapse: collapse;
-  font-size: 20px;
-  min-width: 300px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 800px;
   text-align: center;
-
 }
 
 .table-index thead tr {
     background-color: #ccb3ff;
 }
 
-.table-index th,
-.table-index td {
-    padding: 12px 15px;
+.odd-click {
+  background-color: #aaff80;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
+.even-click {
+  background-color: #ffff99;
 }
+
+.show-font{
+  font-size: 16px;
+}
+
+/* Form HTML CSS */
+/* Add these styles to your CSS file */
+.show-table {
+  width: 70%; /* Make the table fill the entire width of its container */
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+.show-table td {
+  padding: 10px; /* Add padding to table cells */
+  border: 1px solid #ddd; /* Add a border to table cells */
+}
+
+.show-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Add a background color to even rows for better readability */
+}
+
+.show-table tr:hover {
+  background-color: #e6e6e6; /* Change background color of row on hover */
+}
+
+section {
+  width: 100%;
+  padding: 100 0%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #ffb3d1;
+  height: 70px;
+}
+
+body.lightyellow {
+  background-color: lightyellow;
+}
+
 
 /* Additional styles can be added here */
 

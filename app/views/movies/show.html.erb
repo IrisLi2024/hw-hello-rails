@@ -2,9 +2,9 @@
 
 <%= render @movie %>
 
-<div>
+<div class="show-font">
   <%= link_to "Edit This Movie", edit_movie_path(@movie) %> |
   <%= link_to "Back to Movies", back_to_movies_movie_path(@movie) %>
-
+  <br></br>
   <%= button_to "Destroy This Movie", @movie, method: :delete %>
 </div>

@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <p style="color: green"><%= notice %></p>
 
 <h1>Movies</h1>
@@ -12,12 +13,15 @@
 </div>
 -->
 
-<table class="table-index">
+<table id="index-table" class="table-index">
   <thead>
     <tr>
-      <th><%= sort_link(@q, :title, "Title", default_order: :desc) %></th>
-      <th><%= sort_link(@q, :rating, "Rating") %></th>
-      <th><%= sort_link(@q, :release_date, "Release Date") %></th>
+      <th>
+        <%= sort_link(@q, :title, "Title", default_order: :desc) %></th>
+      <th>
+        <%= sort_link(@q, :rating, "Rating", default_order: :desc) %></th>
+      <th>
+        <%= sort_link(@q, :release_date, "Release Date", default_order: :desc) %></th>
     </tr>
   </thead>
   <tbody>
